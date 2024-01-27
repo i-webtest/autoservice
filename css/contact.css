@@ -1,0 +1,152 @@
+.contact {
+  color: #222;
+  padding: 104px 0 120px;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contact__title-text_red {
+  color: #d10014;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 32px;
+  padding: 60px;
+}
+
+.form__fieldset {
+  margin-bottom: 32px;
+}
+
+.form__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.form__months {
+  margin-bottom: 16px;
+}
+
+.form__subtitle {
+  margin-bottom: 16px;
+}
+
+.form__btn-month {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month_active {
+  color: #d10014;
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 8px;
+  margin-bottom: 32px;
+}
+
+.form__input {
+  background-color: #f0f4f4;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 20px;
+}
+
+.form__input:hover {
+}
+
+.form__input::placeholder {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  opacity: 0.4;
+}
+
+.form__info {
+  color: #222;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 4px;
+}
+
+.form__info:last-child {
+  margin-bottom: 0;
+}
+
+.form__info-date {
+}
+
+.form__btn-wrapper {
+}
+
+.form__btn {
+}
+
+.form__btn:disabled {
+  color: #222;
+  background-color: #f0f4f4;
+  opacity: 0.4;
+}
+
+.form__btn_next {
+}
+
+.radio {
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 50px;
+  background-color: #f0f4f4;
+  border: 1px solid transparent;
+  padding: 12px 20px;
+}
+
+.radio__label:hover {
+  background-color: #e4f0f0;
+}
+
+.radio__input:focus-visible + .radio__label {
+  border-color: #d10014;
+}
+
+.radio__input:checked + .radio__label {
+  color: #fff;
+  background-color: #222;
+}
