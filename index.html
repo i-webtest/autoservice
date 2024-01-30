@@ -17,7 +17,7 @@
           alt="Логотип компании AutoService"
         />
 
-        <button class="header__button">Выбрать специалиста</button>
+        <a class="header__link" href="#contact">Выбрать специалиста</a>
       </div>
     </header>
 
@@ -52,19 +52,20 @@
             </h2>
 
             <p class="about__text">
-              С момента основания нашей автомастерской мы уделяем особое
-              внимание каждой детали и работаем с любыми марками автомобилей.
+              С&nbsp;момента основания нашей автомастерской мы&nbsp;уделяем
+              особое внимание каждой детали и&nbsp;работаем с&nbsp;любыми
+              марками автомобилей.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="contact__title">
-            Заполните форму и мы
+            Заполните форму и&nbsp;мы
             <span class="contact__title-text contact__title-text_red">
-              свяжемся с вами
+              свяжемся с&nbsp;вами
             </span>
           </h2>
 
@@ -398,14 +399,14 @@
               <p class="form__info">Диагностика и ремонт двигателей</p>
               <p class="form__info">
                 <time class="form__info-date" datetime="2024">
-                  <span>03.02</span>
-                  <span>14:00</span>
+                  <span class="form__info-date-day">03.02</span>
+                  <span class="form__info-date-time">14:00</span>
                 </time>
               </p>
             </fieldset>
 
             <div class="form__btn-wrapper">
-              <button class="form__btn">
+              <button class="form__btn" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="13"
@@ -421,7 +422,8 @@
                 <span>Назад</span>
               </button>
 
-              <button class="form__btn form__btn_next">
+              <button class="form__btn form__btn_next" type="button">
+                <span>Далее</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="13"
@@ -434,7 +436,10 @@
                     fill="currentColor"
                   />
                 </svg>
-                <span>Далее</span>
+              </button>
+
+              <button class="form__btn form__btn_submit" type="submit">
+                Отправить
               </button>
             </div>
           </form>
@@ -443,7 +448,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <img
           class="footer__logo"
           src="image/logo.svg"
@@ -455,11 +460,23 @@
         <ul class="footer__developers">
           <li class="footer__developer">
             Designer:
-            <a class="footer__developer-link" href="">Anastasia Ilina</a>
+            <a
+              class="footer__developer-link"
+              href="https://Mrshmallowww"
+              target="_blank"
+            >
+              Anastasia Ilina
+            </a>
           </li>
           <li class="footer__developer">
             Developer:
-            <a class="footer__developer-link" href="">Stanislav Groshev</a>
+            <a
+              class="footer__developer-link"
+              href="https://t.me/stasbass"
+              target="_blank"
+            >
+              Stanislav Groshev
+            </a>
           </li>
         </ul>
       </div>
