@@ -1,5 +1,3 @@
-'use strict';
-
 import { fetchData } from './fetchData.js';
 
 const form = document.querySelector('.form');
@@ -23,7 +21,6 @@ let month = currentMonth;
 let currentStep = 0;
 
 const data = await fetchData();
-console.log('data: ', data);
 const dataToWrite = {
   dataType: {},
   day: '',
@@ -68,16 +65,6 @@ const allMonth = [
   'ноябрь',
   'декабрь',
 ];
-
-/*
-<p class="form__info form__info_type">Диагностика и ремонт двигателей</p>
-              <p class="form__info">
-                <time class="form__info-date" datetime="2024">
-                  <span class="form__info-date-day">03.02</span>
-                  <span class="form__info-date-time">14:00</span>
-                </time>
-              </p>
-*/
 
 const showResultData = () => {
   const currentYear = new Date().getFullYear();
@@ -285,7 +272,7 @@ const init = () => {
 
       if (response.ok) {
         console.log('Данные успешно отправлены');
-        alert('Данные успешно отправлены');
+        // alert('Данные успешно отправлены');
         form.innerHTML = `<h2>'Данные успешно отправлены'</h2>`;
       } else {
         throw new Error(`Ошибка при отправке данных: ${response.status}`);
