@@ -73,6 +73,10 @@
   transform: scale(1.05);
 }
 
+.form__time {
+  display: none;
+}
+
 .form__input-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
